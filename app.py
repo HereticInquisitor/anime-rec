@@ -5,11 +5,11 @@ import bz2
 
 st.title('Anime Recommender System')
 
-movie_dict = pickle.load(bz2.open('movies_dict.pkl','rb'))
+movie_dict = pickle.load(open('movies_dict.pkl','rb'))
 movies = pd.DataFrame(movie_dict)
 
 
-similarity = pickle.load(bz2.open('similarity.pkl','rb'))
+similarity = pickle.load(open('similarity.pkl','rb'))
 
 def recommend(movie):
     m_index = movies[movies['name'] == movie].index[0]
