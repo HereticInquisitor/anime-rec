@@ -5,7 +5,7 @@ import bz2
 
 st.title('Anime Recommender System')
 
-movie_dict = pickle.load(open('movies_dict.pkl','rb'))
+movie_dict = pickle.load(bz2.open('movies_dict.pkl','rb'))
 movies = pd.DataFrame(movie_dict)
 
 
