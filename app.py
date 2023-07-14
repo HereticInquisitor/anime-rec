@@ -7,6 +7,7 @@ st.title('Anime Recommender System')
 
 movie_dict = pickle.load(open('movies_dict.pkl','rb'))
 movies = pd.DataFrame(movie_dict)
+print(movies.head())
 
 
 similarity = pickle.load(open('similarity.pkl','rb'))
