@@ -1,5 +1,5 @@
 # anime-recommender system
 
-git clone the repository 
-Run the requirements.txt file
-finally run app.py
+git clone the repository \n
+Run the requirements.txt file \n
+finally run app.py \n
